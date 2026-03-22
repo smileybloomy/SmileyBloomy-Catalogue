@@ -92,7 +92,7 @@ body {
   color: #8B4789;
   font-size: 16px;
   font-style: italic;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .section-title::after {
@@ -108,7 +108,7 @@ body {
 }
 
 .category-section {
-  margin: 40px 0;
+  margin: 0px 0;
 }
 
 .category-header {
@@ -274,6 +274,14 @@ body {
   border-radius: 10px;
   padding: 15px;
   margin-top: 15px;
+}
+
+.size-pricing img {
+  display: block;
+  margin: 12px auto 0 auto;
+  padding: 8px;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .size-title {
@@ -443,6 +451,37 @@ body {
   line-height: 1.8;
 }
 
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+  letter-spacing: 0.3px;
+  width: 100%;
+}
+
+.whatsapp-btn:hover {
+  background: linear-gradient(135deg, #128C7E, #075E54);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn svg {
+  flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
   .brand-name {
     font-size: 36px;
@@ -460,988 +499,945 @@ body {
 </head>
 <body>
 
-<div class="catalogue-container">
-  
-  <!-- Header -->
-  <div class="header">
-    <h1 class="brand-name">Smiley's Bloomy!</h1>
-    <p class="tagline">Pure • Natural • Handcrafted with Love</p>
-  </div>
+    <div class="catalogue-container">
 
-  <!-- Introduction -->
-  <div class="section">
-    <h2 class="section-title">🌸 Our Handmade Soap Collection 🌸</h2>
-    <p class="section-subtitle">Discover the perfect blend of nature's finest ingredients for your skin</p>
-  </div>
+        <!-- Header -->
+        <div class="header">
+            <h1 class="brand-name">Smiley's Bloomy!</h1>
+            <p class="tagline">Pure • Natural • Handcrafted with Love</p>
+        </div>
 
-  <!-- ENERGIZING SOAPS -->
-  <div class="section category-section">
-    <div class="category-header">
-      <h3 class="category-title">
-        <span>☀️</span>
-        <span>Energizing &amp; Refreshing</span>
-      </h3>
-      <p class="category-desc">Awaken your senses and start your day with invigorating freshness</p>
+        <!-- Introduction -->
+        <div class="section">
+            <h2 class="section-title">🌸 Our Handmade Soap Collection 🌸</h2>
+            <p class="section-subtitle">Discover the perfect blend of nature's finest ingredients for your skin</p>
+        </div>
+
+        <!-- ENERGIZING SOAPS -->
+        <div class="section category-section">
+            <div class="category-header">
+                <h3 class="category-title">
+                    <span>☀️</span>
+                    <span>Energizing &amp; Refreshing</span>
+                </h3>
+                <p class="category-desc">Awaken your senses and start your day with invigorating freshness</p>
+            </div>
+
+            <div class="soaps-grid">
+
+                <!-- Citrus Sunrise - BUDGET -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-budget">Budget</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🍋</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Citrus Sunrise</h4>
+                            <p class="skin-type">Oily/Acne-prone skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Natural antibacterial &amp; antifungal properties</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Refreshes and energizes the mind</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Controls excess oil and tightens pores</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Deeply moisturizing with goat milk</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹55</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹70</span>
+                        </div>
+                        <img src="images/Citrus_Sunrise.jpg" alt="Citrus_Sunrise">
+                    </div>
+                </div>
+
+                <!-- Cool Breeze - BUDGET -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-budget">Budget</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🌿</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Cool Breeze</h4>
+                            <p class="skin-type">Normal/Combination skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Cooling sensation for hot summer days</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Invigorates and refreshes tired skin</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Soothes itchiness and irritation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Locks in hydration with glycerine</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹65</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹80</span>
+                        </div>
+                        <img src="images/Cool_Breeze.jpg" alt="Cool_Breeze">
+                    </div>
+                </div>
+
+
+                <!-- Herbal Awakening - BUDGET -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-budget">Budget</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🌱</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Herbal Awakening</h4>
+                            <p class="skin-type">Oily/Acne-prone skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Stimulates blood circulation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Clarifies and tones the skin</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Natural antiseptic properties</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Nourishes with shea butter</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹55</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹70</span>
+                        </div>
+                        <img src="images/Herbal_Awakening.jpg" alt="Herbal_Awakening">
+                    </div>
+                </div>
+
+                <!-- Morning Ritual - PREMIUM -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-premium">Premium</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">☕</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Morning Ritual</h4>
+                            <p class="skin-type">Dull/Cellulite-prone skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Exfoliates dead skin cells naturally</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Reduces appearance of cellulite</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Improves blood circulation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Rich antioxidants for youthful skin</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹65</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹80</span>
+                        </div>
+                        <img src="images/Morning_Ritual.jpg" alt="Morning_Ritual">
+                    </div>
+                </div>
+
+                <!-- Sweet Citrus Bliss - STANDARD -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-standard">Standard</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🍊</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Sweet Citrus Bliss</h4>
+                            <p class="skin-type">Dry/Mature skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Brightens and evens skin tone</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Rich in Vitamin C for radiance</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Honey moisturizes and heals</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Deep nourishment with shea butter</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹55</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹70</span>
+                        </div>
+                        <img src="images/Sweet_Citrus_Bliss.jpg" alt="Sweet_Citrus_Bliss">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CALMING & SOOTHING SOAPS -->
+        <div class="section category-section">
+            <div class="category-header">
+                <h3 class="category-title">
+                    <span>🌙</span>
+                    <span>Calming &amp; Soothing</span>
+                </h3>
+                <p class="category-desc">Relax, unwind, and pamper your skin with gentle, peaceful blends</p>
+            </div>
+
+            <div class="soaps-grid">
+
+                <!-- Dreamy Lavender - BUDGET -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-budget">Budget</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">💜</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Dreamy Lavender</h4>
+                            <p class="skin-type">Sensitive/All skin types</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Promotes relaxation and better sleep</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Soothes irritated and sensitive skin</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Natural antiseptic and anti-inflammatory</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Calming floral fragrance</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹55</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹70</span>
+                        </div>
+                        <img src="images/Dreamy_Lavender.jpg" alt="Dreamy_Lavender">
+                    </div>
+                </div>
+
+                <!-- Garden Serenity - BUDGET -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-budget">Budget</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🌼</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Garden Serenity</h4>
+                            <p class="skin-type">Sensitive/Dry skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Deeply hydrates and heals skin</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Soothes sunburn and inflammation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Jasmine uplifts mood naturally</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Gentle for all skin types</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹65</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹80</span>
+                        </div>
+                        <img src="images/Garden_Serenity.jpg" alt="Garden_Serenity">
+                    </div>
+                </div>
+
+                <!-- Chocolate Dream - LUXURY -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-luxury">Luxury</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🍫</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Golden Meadow</h4>
+                            <p class="skin-type">Dry/Sensitive skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Rich in antioxidants for anti-aging</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Deeply moisturizes dry skin</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Chamomile calms and soothes</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Luxurious chamomile aroma</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹75</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹90</span>
+                        </div>
+                        <img src="images/Golden_Meadow.jpg" alt="Golden_Meadow">
+                    </div>
+                </div>
+
+                <!-- Golden Comfort - STANDARD -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-standard">Standard</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🍯</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Golden Comfort</h4>
+                            <p class="skin-type">Sensitive/Dry skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Gentle exfoliation with oatmeal</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Soothes eczema and dry skin</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Honey locks in moisture</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Perfect for sensitive skin</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹65</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹80</span>
+                        </div>
+                        <img src="images/Golden_Comfort.jpg" alt="Golden_Comfort">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DETOXIFYING & PURIFYING SOAPS -->
+        <div class="section category-section">
+            <div class="category-header">
+                <h3 class="category-title">
+                    <span>🖤</span>
+                    <span>Detoxifying &amp; Purifying</span>
+                </h3>
+                <p class="category-desc">Deep cleanse and purify with activated charcoal and powerful botanicals</p>
+            </div>
+
+            <div class="soaps-grid">
+
+                <!-- Midnight Calm - PREMIUM -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-premium">Premium</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🌑</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Midnight Calm</h4>
+                            <p class="skin-type">Oily/Combination skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Draws out impurities and toxins</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Deep pore cleansing action</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Lavender soothes while detoxifying</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Balances oily and combination skin</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹60</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹75</span>
+                        </div>
+                        <img src="images/Midnight_Calm.jpg" alt="Midnight_Calm">
+                    </div>
+                </div>
+
+                <!-- Dark Detox - PREMIUM -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-premium">Premium</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">⚫</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Dark Detox</h4>
+                            <p class="skin-type">Oily/Acne-prone skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Powerful acne-fighting combination</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Controls excess oil production</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Unclogs pores and prevents breakouts</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Antibacterial and purifying</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹60</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹75</span>
+                        </div>
+                        <img src="images/Dark_Detox.jpg" alt="Dark_Detox">
+                    </div>
+                </div>
+
+                <!-- Pure Clarity - STANDARD -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-standard">Standard</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🌿</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Pure Clarity</h4>
+                            <p class="skin-type">Oily/Acne-prone skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Natural acne treatment</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Antibacterial and antifungal</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Reduces inflammation and redness</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Fresh, medicinal herbal scent</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹60</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹75</span>
+                        </div>
+                        <img src="images/Pure_Clarity.jpg" alt="Pure_Clarity">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOURISHING & ANTI-AGING SOAPS -->
+        <div class="section category-section">
+            <div class="category-header">
+                <h3 class="category-title">
+                    <span>✨</span>
+                    <span>Nourishing &amp; Anti-Aging</span>
+                </h3>
+                <p class="category-desc">Luxurious ingredients for youthful, radiant, and deeply nourished skin</p>
+            </div>
+
+            <div class="soaps-grid">
+
+                <!-- Omega Glow - PREMIUM -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-premium">Premium</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🌾</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Omega Glow</h4>
+                            <p class="skin-type">Dry/Mature skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Rich in Omega-3 fatty acids</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Anti-aging and skin firming</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Deeply nourishes and repairs</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Gentle exfoliation for smooth skin</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹70</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹85</span>
+                        </div>
+                        <img src="images/Omega_Glow.jpg" alt="Omega_Glow">
+                    </div>
+                </div>
+
+                <!-- Petal Soft - LUXURY -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-luxury">Luxury</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🌹</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Petal Soft</h4>
+                            <p class="skin-type">Mature/Dry skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Luxuriously moisturizing</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Anti-aging rose properties</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Shea butter deeply nourishes</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Romantic floral fragrance</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹75</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹90</span>
+                        </div>
+                        <img src="images/Petal_Soft.jpg" alt="Petal_Soft">
+                    </div>
+                </div>
+
+                <!-- Golden Radiance - STANDARD -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-standard">Standard</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🌟</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Golden Radiance</h4>
+                            <p class="skin-type">Dull/Uneven skin tone</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Brightens and evens skin tone</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Anti-inflammatory turmeric</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Sandalwood for glowing skin</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Traditional Ayurvedic blend</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹65</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹80</span>
+                        </div>
+                        <img src="images/Golden_Radiance.jpg" alt="Golden_Radiance">
+                    </div>
+                </div>
+
+                <!-- Herbal Shield - PREMIUM -->
+                <div class="soap-card">
+                    <span class="price-tier-badge tier-premium">Premium</span>
+                    <div class="soap-header">
+                        <div class="soap-icon">🍃</div>
+                        <div class="soap-title-group">
+                            <h4 class="soap-name">Herbal Shield</h4>
+                            <p class="skin-type">Acne-prone/Problem skin</p>
+                        </div>
+                    </div>
+                    <div class="benefits-list">
+                        <div class="benefits-title">✨ Benefits</div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Powerful antibacterial protection</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Fights acne and skin infections</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Basil purifies and refreshes</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span>Natural skin protector</span>
+                        </div>
+                    </div>
+                    <div class="size-pricing">
+                        <div class="size-title">Price</div>
+                        <div class="price-row">
+                            <span class="price-size">Standard</span>
+                            <span class="price-amount">₹60</span>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-size">Signature</span>
+                            <span class="price-amount">₹75</span>
+                        </div>
+                        <img src="images/Herbal_Shield.jpg" alt="Herbal_Shield">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 50g DISCLAIMER SECTION -->
+        <div class="section">
+            <div class="disclaimer-box">
+                <h3 class="disclaimer-title">
+                    <span>ℹ️</span>
+                    <span>50 Gram Soap Availability</span>
+                </h3>
+                <p class="disclaimer-text">
+                    We also offer 50 gram soaps in square shape for all varieties. These smaller sizes are perfect for sampling, travel, or gifting!
+                </p>
+                <div class="size-50g-pricing">
+                    <div class="size-50g-title">50g Pricing by Category</div>
+                    <div class="price-row">
+                        <span class="price-size">Budget Soaps (50g)</span>
+                        <span class="price-amount">₹40</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-size">Standard Soaps (50g)</span>
+                        <span class="price-amount">₹50</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-size">Premium Soaps (50g)</span>
+                        <span class="price-amount">₹55</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-size">Luxury Soaps (50g)</span>
+                        <span class="price-amount">₹60</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CUSTOMIZATION SECTION -->
+        <div class="section">
+            <h2 class="section-title">✨ Customization &amp; Gifting ✨</h2>
+
+            <div class="custom-section">
+                <div class="custom-grid">
+
+                    <div class="custom-item">
+                        <div class="custom-icon">🎨</div>
+                        <h4 class="custom-title">Custom Colors</h4>
+                        <p class="custom-desc">Choose from our palette of natural dyes to create your signature shade</p>
+                    </div>
+
+                    <div class="custom-item">
+                        <div class="custom-icon">🔷</div>
+                        <h4 class="custom-title">Special Shapes</h4>
+                        <p class="custom-desc">Request unique custom shapes beyond our standard collection</p>
+                    </div>
+
+                    <div class="custom-item">
+                        <div class="custom-icon">🌿</div>
+                        <h4 class="custom-title">Fragrance Blends</h4>
+                        <p class="custom-desc">Personalize with your favorite essential oil combinations</p>
+                    </div>
+
+                    <div class="custom-item">
+                        <div class="custom-icon">🎁</div>
+                        <h4 class="custom-title">Gift Packaging</h4>
+                        <p class="custom-desc">Elegant boxes, personalized messages, and festive wrapping available</p>
+                    </div>
+
+                    <div class="custom-item">
+                        <div class="custom-icon">💝</div>
+                        <h4 class="custom-title">Gift Sets</h4>
+                        <p class="custom-desc">Curated collections for special occasions - weddings, festivals, corporate gifts</p>
+                    </div>
+
+                    <div class="custom-item">
+                        <div class="custom-icon">🏷️</div>
+                        <h4 class="custom-title">Custom Labels</h4>
+                        <p class="custom-desc">Add personalized labels for events, parties, or business branding</p>
+                    </div>
+
+                </div>
+
+                <p style="text-align: center; margin-top: 25px; color: #8B4789; font-size: 16px; font-weight: 600;">
+                    📞 Contact us for customization pricing, bulk orders, and corporate gifting options!
+                </p>
+            </div>
+        </div>
+
+        <!-- IMPORTANT NOTICE -->
+        <div class="section">
+            <div class="notice-box">
+                <h3 class="notice-title">
+                    <span>⚠️</span>
+                    <span>Important Notice - Patch Test Recommended</span>
+                </h3>
+                <p class="notice-text">
+                    As our soaps are handmade with natural ingredients, we recommend performing a patch test on a small area of skin before full use. Apply a small amount to your inner forearm, wait 24 hours, and check for any reaction. Discontinue use if irritation occurs. For external use only. Store in a cool, dry place away from direct sunlight.
+                </p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p class="footer-text">🌸 Smiley's Bloomy - Where Nature Meets Luxury 🌸</p>
+            <p class="footer-text">Handcrafted with Love • 100% Natural Ingredients • Cruelty-Free • Eco-Friendly</p>
+            <p class="contact-info">
+                📧 Email: smileybloomy@gmail.com<br>
+                📱 WhatsApp: +91 9553041079<br>
+                📸 Instagram: @smileybloomy
+            </p>
+            <p class="footer-text" style="margin-top: 20px; font-size: 12px; opacity: 0.9;">
+                © 2021 Smiley's Bloomy. All rights reserved. | Made with 💜 in India
+            </p>
+        </div>
+
     </div>
-    
-    <div class="soaps-grid">
-      
-      <!-- Citrus Sunrise - BUDGET -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-budget">Budget</span>
-        <div class="soap-header">
-          <div class="soap-icon">🍋</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Citrus Sunrise</h4>
-            <p class="skin-type">Oily/Acne-prone skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Natural antibacterial &amp; antifungal properties</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Refreshes and energizes the mind</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Controls excess oil and tightens pores</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Deeply moisturizing with goat milk</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹50</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Circle/Heart/Flower)</span>
-            <span class="price-amount">₹70</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Oval, Rectangle</p>
-        </div>
-      </div>
 
-      <!-- Cool Breeze - BUDGET -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-budget">Budget</span>
-        <div class="soap-header">
-          <div class="soap-icon">🌿</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Cool Breeze</h4>
-            <p class="skin-type">Normal/Combination skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Cooling sensation for hot summer days</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Invigorates and refreshes tired skin</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Soothes itchiness and irritation</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Locks in hydration with glycerine</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹50</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Rectangle)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Wavy)</span>
-            <span class="price-amount">₹70</span>
-          </div>
-          <!--p class="shape-note">100g standard:  Rectangle</p-->
-        </div>
-      </div>
+            <!-- Control Buttons -->
+            <div id="viz-controls" style="position:fixed;top:15px;right:15px;z-index:9999;display:flex;gap:8px">
+                <button id="export-html-btn" style="background: rgb(39, 174, 96); border: 2px solid rgb(39, 174, 96); color: white; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; transition: 0.2s; transform: translateY(-2px);" title="Export as HTML" onmouseover="this.style.background='#27AE60';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#2ECC71';this.style.transform='translateY(0)'">💾 Export</button>
+                <button id="fs-btn" style="background: white; border: 2px solid rgb(139, 71, 137); color: rgb(139, 71, 137); padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; transition: 0.2s; transform: translateY(0px);" title="Fullscreen" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">⛶</button>
+            </div>
 
-      <!-- Morning Ritual - PREMIUM -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-premium">Premium</span>
-        <div class="soap-header">
-          <div class="soap-icon">☕</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Morning Ritual</h4>
-            <p class="skin-type">Dull/Cellulite-prone skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Exfoliates dead skin cells naturally</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Reduces appearance of cellulite</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Improves blood circulation</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Rich antioxidants for youthful skin</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Heart/Wavy)</span>
-            <span class="price-amount">₹85</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Circle, Oval, Rectangle</p>
-        </div>
-      </div>
+            <script>
+                (function () {
+                    var WA_NUMBER = '919553041079';
+                    var WA_ICON_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
 
-      <!-- Herbal Awakening - BUDGET -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-budget">Budget</span>
-        <div class="soap-header">
-          <div class="soap-icon">🌱</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Herbal Awakening</h4>
-            <p class="skin-type">Oily/Acne-prone skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Stimulates blood circulation</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Clarifies and tones the skin</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Natural antiseptic properties</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Nourishes with shea butter</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹50</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Heart/Flower)</span>
-            <span class="price-amount">₹70</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Circle, Oval, Rectangle</p>
-        </div>
-      </div>
+                    function injectWhatsAppButtons() {
+                        document.querySelectorAll('.soap-card').forEach(function (card) {
+                            var soapName = card.querySelector('.soap-name').textContent.trim();
+                            var message = "Hi Smiley's Bloomy! I'd like to order the *" + soapName + "* soap. Please add to the list to build your cart!!";
+                            var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(message);
 
-      <!-- Sweet Citrus Bliss - STANDARD -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-standard">Standard</span>
-        <div class="soap-header">
-          <div class="soap-icon">🍊</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Sweet Citrus Bliss</h4>
-            <p class="skin-type">Dry/Mature skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Brightens and evens skin tone</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Rich in Vitamin C for radiance</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Honey moisturizes and heals</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Deep nourishment with shea butter</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹60</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹75</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Circle/Flower)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Oval, Rectangle</p>
-        </div>
-      </div>
+                            var btn = document.createElement('a');
+                            btn.className = 'whatsapp-btn';
+                            btn.href = url;
+                            btn.target = '_blank';
+                            btn.rel = 'noopener noreferrer';
+                            btn.innerHTML = WA_ICON_SVG + ' Order on WhatsApp';
 
-    </div>
-  </div>
+                            card.querySelector('.size-pricing').appendChild(btn);
+                        });
+                    }
 
-  <!-- CALMING & SOOTHING SOAPS -->
-  <div class="section category-section">
-    <div class="category-header">
-      <h3 class="category-title">
-        <span>🌙</span>
-        <span>Calming &amp; Soothing</span>
-      </h3>
-      <p class="category-desc">Relax, unwind, and pamper your skin with gentle, peaceful blends</p>
-    </div>
-    
-    <div class="soaps-grid">
-      
-      <!-- Dreamy Lavender - BUDGET -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-budget">Budget</span>
-        <div class="soap-header">
-          <div class="soap-icon">💜</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Dreamy Lavender</h4>
-            <p class="skin-type">Sensitive/All skin types</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Promotes relaxation and better sleep</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Soothes irritated and sensitive skin</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Natural antiseptic and anti-inflammatory</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Calming floral fragrance</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹50</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Heart/Flower)</span>
-            <span class="price-amount">₹70</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Circle, Oval, Rectangle</p>
-        </div>
-      </div>
+                    document.addEventListener('DOMContentLoaded', injectWhatsAppButtons);
 
-      <!-- Garden Serenity - BUDGET -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-budget">Budget</span>
-        <div class="soap-header">
-          <div class="soap-icon">🌼</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Garden Serenity</h4>
-            <p class="skin-type">Sensitive/Dry skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Deeply hydrates and heals skin</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Soothes sunburn and inflammation</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Jasmine uplifts mood naturally</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Gentle for all skin types</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹50</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (With Leaves)</span>
-            <span class="price-amount">₹70</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Circle, Oval</p>
-        </div>
-      </div>
+                    document.getElementById('export-html-btn').addEventListener('click', function () {
+                        try {
+                            var htmlClone = document.documentElement.cloneNode(true);
+                            var htmlContent = '<!DOCTYPE html>\n' + htmlClone.outerHTML;
+                            var blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+                            var timestamp = new Date().toISOString().slice(0, 10);
+                            var filename = 'smileys_bloomy_catalogue_' + timestamp + '.html';
+                            var link = document.createElement('a');
+                            link.href = URL.createObjectURL(blob);
+                            link.download = filename;
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                            URL.revokeObjectURL(link.href);
+                            var btn = this;
+                            var originalText = btn.innerHTML;
+                            btn.innerHTML = '✓ Saved!';
+                            setTimeout(function () { btn.innerHTML = originalText; }, 2000);
+                        } catch (err) {
+                            console.error('Export error:', err);
+                            alert('Export failed: ' + err.message);
+                        }
+                    });
 
-      <!-- Chocolate Dream - LUXURY -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-luxury">Luxury</span>
-        <div class="soap-header">
-          <div class="soap-icon">🍫</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Golden Meadow</h4>
-            <p class="skin-type">Dry/Sensitive skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Rich in antioxidants for anti-aging</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Deeply moisturizes dry skin</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Chamomile calms and soothes</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Luxurious chamomile aroma</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹70</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Rainbow)</span>
-            <span class="price-amount">₹90</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Flower)</span>
-            <span class="price-amount">₹95</span>
-          </div>
-          <!--p class="shape-note">100g standard: Square, Circle, Oval, Rectangle</p-->
-        </div>
-      </div>
+                    document.getElementById('fs-btn').addEventListener('click', function () {
+                        if (!document.fullscreenElement) {
+                            document.documentElement.requestFullscreen().catch(e => console.error(e));
+                        } else {
+                            document.exitFullscreen();
+                        }
+                    });
 
-      <!-- Golden Comfort - STANDARD -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-standard">Standard</span>
-        <div class="soap-header">
-          <div class="soap-icon">🍯</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Golden Comfort</h4>
-            <p class="skin-type">Sensitive/Dry skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Gentle exfoliation with oatmeal</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Soothes eczema and dry skin</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Honey locks in moisture</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Perfect for sensitive skin</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹60</span>
-          </div>
-          <!--div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹75</span>
-          </div-->
-          <div class="price-row">
-            <span class="price-size">100g (HoneyBee)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <!--p class="shape-note">100g standard: Square, Circle, Oval, Rectangle</p-->
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- DETOXIFYING & PURIFYING SOAPS -->
-  <div class="section category-section">
-    <div class="category-header">
-      <h3 class="category-title">
-        <span>🖤</span>
-        <span>Detoxifying &amp; Purifying</span>
-      </h3>
-      <p class="category-desc">Deep cleanse and purify with activated charcoal and powerful botanicals</p>
-    </div>
-    
-    <div class="soaps-grid">
-      
-      <!-- Midnight Calm - PREMIUM -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-premium">Premium</span>
-        <div class="soap-header">
-          <div class="soap-icon">🌑</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Midnight Calm</h4>
-            <p class="skin-type">Oily/Combination skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Draws out impurities and toxins</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Deep pore cleansing action</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Lavender soothes while detoxifying</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Balances oily and combination skin</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Engraved)</span>
-            <span class="price-amount">₹85</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Circle</p>
-        </div>
-      </div>
-
-      <!-- Dark Detox - PREMIUM -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-premium">Premium</span>
-        <div class="soap-header">
-          <div class="soap-icon">⚫</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Dark Detox</h4>
-            <p class="skin-type">Oily/Acne-prone skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Powerful acne-fighting combination</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Controls excess oil production</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Unclogs pores and prevents breakouts</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Antibacterial and purifying</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Engraved)</span>
-            <span class="price-amount">₹85</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Circle</p>
-        </div>
-      </div>
-
-      <!-- Pure Clarity - STANDARD -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-standard">Standard</span>
-        <div class="soap-header">
-          <div class="soap-icon">🌿</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Pure Clarity</h4>
-            <p class="skin-type">Oily/Acne-prone skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Natural acne treatment</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Antibacterial and antifungal</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Reduces inflammation and redness</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Fresh, medicinal herbal scent</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹60</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹75</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (With Leaves)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <p class="shape-note">100g standard: Circle, Oval, Rectangle</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- NOURISHING & ANTI-AGING SOAPS -->
-  <div class="section category-section">
-    <div class="category-header">
-      <h3 class="category-title">
-        <span>✨</span>
-        <span>Nourishing &amp; Anti-Aging</span>
-      </h3>
-      <p class="category-desc">Luxurious ingredients for youthful, radiant, and deeply nourished skin</p>
-    </div>
-    
-    <div class="soaps-grid">
-      
-      <!-- Omega Glow - PREMIUM -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-premium">Premium</span>
-        <div class="soap-header">
-          <div class="soap-icon">🌾</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Omega Glow</h4>
-            <p class="skin-type">Dry/Mature skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Rich in Omega-3 fatty acids</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Anti-aging and skin firming</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Deeply nourishes and repairs</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Gentle exfoliation for smooth skin</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Heart/Flower)</span>
-            <span class="price-amount">₹85</span>
-          </div>
-          <p class="shape-note">100g standard: Square, Circle, Oval, Rectangle</p>
-        </div>
-      </div>
-
-      <!-- Petal Soft - LUXURY -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-luxury">Luxury</span>
-        <div class="soap-header">
-          <div class="soap-icon">🌹</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Petal Soft</h4>
-            <p class="skin-type">Mature/Dry skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Luxuriously moisturizing</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Anti-aging rose properties</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Shea butter deeply nourishes</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Romantic floral fragrance</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹70</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Flower)</span>
-            <span class="price-amount">₹90</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Heart with Rose Petals)</span>
-            <span class="price-amount">₹95</span>
-          </div>
-          <!--p class="shape-note">100g standard: Square, Circle, Oval, Rectangle</p-->
-        </div>
-      </div>
-
-      <!-- Golden Radiance - STANDARD -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-standard">Standard</span>
-        <div class="soap-header">
-          <div class="soap-icon">🌟</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Golden Radiance</h4>
-            <p class="skin-type">Dull/Uneven skin tone</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Brightens and evens skin tone</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Anti-inflammatory turmeric</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Sandalwood for glowing skin</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Traditional Ayurvedic blend</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹60</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Standard)</span>
-            <span class="price-amount">₹75</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Heart/Flower)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <p class="shape-note">100g standard: Engraved Oval, Rectangle</p>
-        </div>
-      </div>
-
-      <!-- Herbal Shield - PREMIUM -->
-      <div class="soap-card">
-        <span class="price-tier-badge tier-premium">Premium</span>
-        <div class="soap-header">
-          <div class="soap-icon">🍃</div>
-          <div class="soap-title-group">
-            <h4 class="soap-name">Herbal Shield</h4>
-            <p class="skin-type">Acne-prone/Problem skin</p>
-          </div>
-        </div>
-        <div class="benefits-list">
-          <div class="benefits-title">✨ Benefits</div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Powerful antibacterial protection</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Fights acne and skin infections</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Basil purifies and refreshes</span>
-          </div>
-          <div class="benefit-item">
-            <span class="benefit-icon">✓</span>
-            <span>Natural skin protector</span>
-          </div>
-        </div>
-        <div class="size-pricing">
-          <div class="size-title">Pricing by Size</div>
-          <div class="price-row">
-            <span class="price-size">75g (Oval)</span>
-            <span class="price-amount">₹65</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Square)</span>
-            <span class="price-amount">₹80</span>
-          </div>
-          <div class="price-row">
-            <span class="price-size">100g (Engraved)</span>
-            <span class="price-amount">₹85</span>
-          </div>
-          <!--p class="shape-note">100g standard: Square, Circle, Oval, Rectangle</p-->
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- 50g DISCLAIMER SECTION -->
-  <div class="section">
-    <div class="disclaimer-box">
-      <h3 class="disclaimer-title">
-        <span>ℹ️</span>
-        <span>50 Gram Soap Availability</span>
-      </h3>
-      <p class="disclaimer-text">
-        We also offer 50 gram soaps in square shape for all varieties. These smaller sizes are perfect for sampling, travel, or gifting!
-      </p>
-      <div class="size-50g-pricing">
-        <div class="size-50g-title">50g Pricing by Category</div>
-        <div class="price-row">
-          <span class="price-size">Budget Soaps (50g)</span>
-          <span class="price-amount">₹40</span>
-        </div>
-        <div class="price-row">
-          <span class="price-size">Standard Soaps (50g)</span>
-          <span class="price-amount">₹50</span>
-        </div>
-        <div class="price-row">
-          <span class="price-size">Premium Soaps (50g)</span>
-          <span class="price-amount">₹55</span>
-        </div>
-        <div class="price-row">
-          <span class="price-size">Luxury Soaps (50g)</span>
-          <span class="price-amount">₹60</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CUSTOMIZATION SECTION -->
-  <div class="section">
-    <h2 class="section-title">✨ Customization &amp; Gifting ✨</h2>
-    
-    <div class="custom-section">
-      <div class="custom-grid">
-        
-        <div class="custom-item">
-          <div class="custom-icon">🎨</div>
-          <h4 class="custom-title">Custom Colors</h4>
-          <p class="custom-desc">Choose from our palette of natural dyes to create your signature shade</p>
-        </div>
-
-        <div class="custom-item">
-          <div class="custom-icon">🔷</div>
-          <h4 class="custom-title">Special Shapes</h4>
-          <p class="custom-desc">Request unique custom shapes beyond our standard collection</p>
-        </div>
-
-        <div class="custom-item">
-          <div class="custom-icon">🌿</div>
-          <h4 class="custom-title">Fragrance Blends</h4>
-          <p class="custom-desc">Personalize with your favorite essential oil combinations</p>
-        </div>
-
-        <div class="custom-item">
-          <div class="custom-icon">🎁</div>
-          <h4 class="custom-title">Gift Packaging</h4>
-          <p class="custom-desc">Elegant boxes, personalized messages, and festive wrapping available</p>
-        </div>
-
-        <div class="custom-item">
-          <div class="custom-icon">💝</div>
-          <h4 class="custom-title">Gift Sets</h4>
-          <p class="custom-desc">Curated collections for special occasions - weddings, festivals, corporate gifts</p>
-        </div>
-
-        <div class="custom-item">
-          <div class="custom-icon">🏷️</div>
-          <h4 class="custom-title">Custom Labels</h4>
-          <p class="custom-desc">Add personalized labels for events, parties, or business branding</p>
-        </div>
-
-      </div>
-      
-      <p style="text-align: center; margin-top: 25px; color: #8B4789; font-size: 16px; font-weight: 600;">
-        📞 Contact us for customization pricing, bulk orders, and corporate gifting options!
-      </p>
-    </div>
-  </div>
-
-  <!-- IMPORTANT NOTICE -->
-  <div class="section">
-    <div class="notice-box">
-      <h3 class="notice-title">
-        <span>⚠️</span>
-        <span>Important Notice - Patch Test Recommended</span>
-      </h3>
-      <p class="notice-text">
-        As our soaps are handmade with natural ingredients, we recommend performing a patch test on a small area of skin before full use. Apply a small amount to your inner forearm, wait 24 hours, and check for any reaction. Discontinue use if irritation occurs. For external use only. Store in a cool, dry place away from direct sunlight.
-      </p>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    <p class="footer-text">🌸 Smiley's Bloomy - Where Nature Meets Luxury 🌸</p>
-    <p class="footer-text">Handcrafted with Love • 100% Natural Ingredients • Cruelty-Free • Eco-Friendly</p>
-    <p class="contact-info">
-      📧 Email: smileybloomy@gmail.com<br>
-      📱 WhatsApp: +91 9553041079<br>
-      📸 Instagram: @smileybloomy
-    </p>
-    <p class="footer-text" style="margin-top: 20px; font-size: 12px; opacity: 0.9;">
-      © 2021 Smiley's Bloomy. All rights reserved. | Made with 💜 in India
-    </p>
-  </div>
-
-</div>
-
-<!-- Control Buttons -->
-<div id="viz-controls" style="position:fixed;top:15px;right:15px;z-index:9999;display:flex;gap:8px">
-  <button id="export-html-btn" style="background: rgb(39, 174, 96); border: 2px solid rgb(39, 174, 96); color: white; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; transition: 0.2s; transform: translateY(-2px);" title="Export as HTML" onmouseover="this.style.background='#27AE60';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#2ECC71';this.style.transform='translateY(0)'">💾 Export</button>
-  <button id="fs-btn" style="background: white; border: 2px solid rgb(139, 71, 137); color: rgb(139, 71, 137); padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px; transition: 0.2s; transform: translateY(0px);" title="Fullscreen" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">⛶</button>
-</div>
-
-<script>
-(function(){
-  document.getElementById('export-html-btn').addEventListener('click',function(){
-    try{
-      var htmlClone=document.documentElement.cloneNode(true);
-      var htmlContent='<!DOCTYPE html>\n'+htmlClone.outerHTML;
-      var blob=new Blob([htmlContent],{type:'text/html;charset=utf-8'});
-      var timestamp=new Date().toISOString().slice(0,10);
-      var filename='smileys_bloomy_catalogue_'+timestamp+'.html';
-      var link=document.createElement('a');
-      link.href=URL.createObjectURL(blob);
-      link.download=filename;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      URL.revokeObjectURL(link.href);
-      var btn=this;
-      var originalText=btn.innerHTML;
-      btn.innerHTML='✓ Saved!';
-      setTimeout(function(){btn.innerHTML=originalText;},2000);
-    }catch(err){
-      console.error('Export error:',err);
-      alert('Export failed: '+err.message);
-    }
-  });
-
-  document.getElementById('fs-btn').addEventListener('click',function(){
-    if(!document.fullscreenElement){
-      document.documentElement.requestFullscreen().catch(e=>console.error(e));
-    }else{
-      document.exitFullscreen();
-    }
-  });
-  
-  document.addEventListener('fullscreenchange',function(){
-    document.getElementById('fs-btn').textContent=document.fullscreenElement?'✕':'⛶';
-  });
-})();
-</script>
+                    document.addEventListener('fullscreenchange', function () {
+                        document.getElementById('fs-btn').textContent = document.fullscreenElement ? '✕' : '⛶';
+                    });
+                })();
+            </script>
 
 </body></html>
